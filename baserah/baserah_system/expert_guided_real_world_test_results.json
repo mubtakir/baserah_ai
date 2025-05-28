@@ -1,0 +1,288 @@
+{
+  "timestamp": "2025-05-24T01:45:07.528060",
+  "test_summary": {
+    "total_shapes": 4,
+    "success_rate": 100.0,
+    "average_improvement": 108.93491270532132,
+    "max_improvement": 142.61470001224748,
+    "min_improvement": 95.51388706643158
+  },
+  "detailed_results": [
+    {
+      "shape_name": "قطة بيضاء واقفة",
+      "shape_category": "حيوانات",
+      "before": {
+        "drawing_quality": 0.7038232555191376,
+        "extraction_accuracy": 0.574347579598482,
+        "artistic_physics_balance": 0.44720808824767266,
+        "pattern_recognition_score": 0.6980159039505949,
+        "innovation_level": 0.21008471839988246,
+        "processing_time": 4.6,
+        "equation_complexity": 3,
+        "adaptation_count": 0,
+        "expert_guidance": false
+      },
+      "after": {
+        "overall_improvement": 1.4225,
+        "final_complexity": 7,
+        "total_adaptations": 5,
+        "final_drawing_quality": 1.0,
+        "final_extraction_accuracy": 0.897875,
+        "final_artistic_physics_balance": 0.87675,
+        "final_innovation_level": 1.0,
+        "final_processing_time": 2.2155,
+        "expert_guidance": true,
+        "performance_history": [
+          {
+            "cycle": 1,
+            "improvement": 0.22500000000000003,
+            "adaptation_strength": 0.3,
+            "target_complexity": 8
+          },
+          {
+            "cycle": 2,
+            "improvement": 0.29750000000000004,
+            "adaptation_strength": 0.44999999999999996,
+            "target_complexity": 9
+          },
+          {
+            "cycle": 3,
+            "improvement": 0.3,
+            "adaptation_strength": 0.6,
+            "target_complexity": 10
+          },
+          {
+            "cycle": 4,
+            "improvement": 0.3,
+            "adaptation_strength": 0.75,
+            "target_complexity": 11
+          },
+          {
+            "cycle": 5,
+            "improvement": 0.3,
+            "adaptation_strength": 0.8999999999999999,
+            "target_complexity": 12
+          }
+        ]
+      },
+      "comparison": {
+        "average_improvement": 142.61470001224748,
+        "individual_improvements": {
+          "جودة الرسم": 42.08112507768779,
+          "دقة الاستنباط": 56.32955232921696,
+          "التوازن الفني-الفيزيائي": 96.0496741987454,
+          "مستوى الإبداع": 375.9984484433398
+        },
+        "complexity_change": 4,
+        "time_improvement": 51.83695652173913
+      }
+    },
+    {
+      "shape_name": "قطة سوداء نائمة",
+      "shape_category": "حيوانات",
+      "before": {
+        "drawing_quality": 0.6477976849413987,
+        "extraction_accuracy": 0.5925292189804169,
+        "artistic_physics_balance": 0.5348475075641268,
+        "pattern_recognition_score": 0.6576651952997142,
+        "innovation_level": 0.3023811831826836,
+        "processing_time": 4.6,
+        "equation_complexity": 3,
+        "adaptation_count": 0,
+        "expert_guidance": false
+      },
+      "after": {
+        "overall_improvement": 1.4225,
+        "final_complexity": 7,
+        "total_adaptations": 5,
+        "final_drawing_quality": 1.0,
+        "final_extraction_accuracy": 0.897875,
+        "final_artistic_physics_balance": 0.87675,
+        "final_innovation_level": 1.0,
+        "final_processing_time": 2.2155,
+        "expert_guidance": true,
+        "performance_history": [
+          {
+            "cycle": 1,
+            "improvement": 0.22500000000000003,
+            "adaptation_strength": 0.3,
+            "target_complexity": 8
+          },
+          {
+            "cycle": 2,
+            "improvement": 0.29750000000000004,
+            "adaptation_strength": 0.44999999999999996,
+            "target_complexity": 9
+          },
+          {
+            "cycle": 3,
+            "improvement": 0.3,
+            "adaptation_strength": 0.6,
+            "target_complexity": 10
+          },
+          {
+            "cycle": 4,
+            "improvement": 0.3,
+            "adaptation_strength": 0.75,
+            "target_complexity": 11
+          },
+          {
+            "cycle": 5,
+            "improvement": 0.3,
+            "adaptation_strength": 0.8999999999999999,
+            "target_complexity": 12
+          }
+        ]
+      },
+      "comparison": {
+        "average_improvement": 100.13385831592095,
+        "individual_improvements": {
+          "جودة الرسم": 54.369183966821744,
+          "دقة الاستنباط": 51.53261159761892,
+          "التوازن الفني-الفيزيائي": 63.92522870546985,
+          "مستوى الإبداع": 230.70840899377325
+        },
+        "complexity_change": 4,
+        "time_improvement": 51.83695652173913
+      }
+    },
+    {
+      "shape_name": "بيت بخلفية أشجار",
+      "shape_category": "مباني",
+      "before": {
+        "drawing_quality": 0.5888032410556133,
+        "extraction_accuracy": 0.8,
+        "artistic_physics_balance": 0.5497597185079229,
+        "pattern_recognition_score": 0.677266005255437,
+        "innovation_level": 0.28137135673490316,
+        "processing_time": 4.6,
+        "equation_complexity": 3,
+        "adaptation_count": 0,
+        "expert_guidance": false
+      },
+      "after": {
+        "overall_improvement": 1.3825,
+        "final_complexity": 7,
+        "total_adaptations": 5,
+        "final_drawing_quality": 1.0,
+        "final_extraction_accuracy": 0.883875,
+        "final_artistic_physics_balance": 0.86475,
+        "final_innovation_level": 0.99125,
+        "final_processing_time": 2.2235,
+        "expert_guidance": true,
+        "performance_history": [
+          {
+            "cycle": 1,
+            "improvement": 0.20500000000000002,
+            "adaptation_strength": 0.3,
+            "target_complexity": 6
+          },
+          {
+            "cycle": 2,
+            "improvement": 0.2775,
+            "adaptation_strength": 0.44999999999999996,
+            "target_complexity": 7
+          },
+          {
+            "cycle": 3,
+            "improvement": 0.3,
+            "adaptation_strength": 0.6,
+            "target_complexity": 8
+          },
+          {
+            "cycle": 4,
+            "improvement": 0.3,
+            "adaptation_strength": 0.75,
+            "target_complexity": 9
+          },
+          {
+            "cycle": 5,
+            "improvement": 0.3,
+            "adaptation_strength": 0.8999999999999999,
+            "target_complexity": 10
+          }
+        ]
+      },
+      "comparison": {
+        "average_improvement": 97.47720542668523,
+        "individual_improvements": {
+          "جودة الرسم": 69.8360216576234,
+          "دقة الاستنباط": 10.48437499999999,
+          "التوازن الفني-الفيزيائي": 57.295991482784046,
+          "مستوى الإبداع": 252.2924335663335
+        },
+        "complexity_change": 4,
+        "time_improvement": 51.66304347826086
+      }
+    },
+    {
+      "shape_name": "شجرة كبيرة",
+      "shape_category": "نباتات",
+      "before": {
+        "drawing_quality": 0.6439801267163161,
+        "extraction_accuracy": 0.6709967432945437,
+        "artistic_physics_balance": 0.4388449644827166,
+        "pattern_recognition_score": 0.6545902262186959,
+        "innovation_level": 0.3442796413659912,
+        "processing_time": 4.3,
+        "equation_complexity": 3,
+        "adaptation_count": 0,
+        "expert_guidance": false
+      },
+      "after": {
+        "overall_improvement": 1.445,
+        "final_complexity": 7,
+        "total_adaptations": 5,
+        "final_drawing_quality": 1.0,
+        "final_extraction_accuracy": 0.90575,
+        "final_artistic_physics_balance": 0.8835,
+        "final_innovation_level": 1.0,
+        "final_processing_time": 2.211,
+        "expert_guidance": true,
+        "performance_history": [
+          {
+            "cycle": 1,
+            "improvement": 0.24500000000000002,
+            "adaptation_strength": 0.3,
+            "target_complexity": 10
+          },
+          {
+            "cycle": 2,
+            "improvement": 0.3,
+            "adaptation_strength": 0.44999999999999996,
+            "target_complexity": 11
+          },
+          {
+            "cycle": 3,
+            "improvement": 0.3,
+            "adaptation_strength": 0.6,
+            "target_complexity": 12
+          },
+          {
+            "cycle": 4,
+            "improvement": 0.3,
+            "adaptation_strength": 0.75,
+            "target_complexity": 13
+          },
+          {
+            "cycle": 5,
+            "improvement": 0.3,
+            "adaptation_strength": 0.8999999999999999,
+            "target_complexity": 14
+          }
+        ]
+      },
+      "comparison": {
+        "average_improvement": 95.51388706643158,
+        "individual_improvements": {
+          "جودة الرسم": 55.284295044793595,
+          "دقة الاستنباط": 34.98575202508963,
+          "التوازن الفني-الفيزيائي": 101.32394615520207,
+          "مستوى الإبداع": 190.461555040641
+        },
+        "complexity_change": 4,
+        "time_improvement": 48.581395348837205
+      }
+    }
+  ]
+}

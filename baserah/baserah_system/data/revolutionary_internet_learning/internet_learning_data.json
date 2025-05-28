@@ -1,0 +1,83 @@
+{
+  "learning_sessions": [
+    {
+      "timestamp": "2025-05-25T03:45:05.604815",
+      "user_id": "unified_test_user_001",
+      "query": "ما هو مستقبل الذكاء الاصطناعي في ضوء التطورات الحديثة؟",
+      "domain": "technology",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:45:05.609512",
+      "user_id": "mode_test_language_generation",
+      "query": "توليد نص إبداعي حول الطبيعة",
+      "domain": "literature",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:45:05.618219",
+      "user_id": "mode_test_wisdom_thinking",
+      "query": "ما هي حكمة الحياة في نظر الفلاسفة؟",
+      "domain": "philosophy",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:45:05.628230",
+      "user_id": "mode_test_internet_learning",
+      "query": "أحدث الاكتشافات في علم الفيزياء الكمية",
+      "domain": "science",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:45:05.632442",
+      "user_id": "mode_test_transcendent_mode",
+      "query": "ما هي طبيعة الوجود والحقيقة المطلقة؟",
+      "domain": "philosophy",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:45:05.636090",
+      "user_id": "comprehensive_test_1",
+      "query": "كيف يمكن دمج الذكاء الاصطناعي مع الفيزياء الكمية لحل مشاكل المستقبل؟",
+      "domain": "technology",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:45:05.640246",
+      "user_id": "comprehensive_test_2",
+      "query": "ما هي العلاقة بين الوعي والوجود في ضوء العلوم الحديثة؟",
+      "domain": "philosophy",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:45:05.645477",
+      "user_id": "comprehensive_test_3",
+      "query": "كيف تفسر نظرية الفتائل الكونية تكوين المجرات والثقوب السوداء؟",
+      "domain": "science",
+      "confidence": 0.98,
+      "quality": 0.97
+    },
+    {
+      "timestamp": "2025-05-25T03:48:58.642507",
+      "user_id": "simple_test_user",
+      "query": "اختبار أساسي للنظام الثوري الموحد",
+      "domain": "test",
+      "confidence": 0.98,
+      "quality": 0.97
+    }
+  ],
+  "knowledge_base": {},
+  "learning_patterns": {},
+  "user_preferences": {},
+  "domain_expertise": {},
+  "cross_domain_connections": {},
+  "semantic_networks": {},
+  "learning_evolution_history": []
+}

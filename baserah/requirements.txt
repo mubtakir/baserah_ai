@@ -1,0 +1,85 @@
+# نظام بصيرة الكوني المتكامل - متطلبات النظام
+# Cosmic Baserah Integrated System - System Requirements
+# إبداع باسل يحيى عبدالله من العراق/الموصل
+
+# المكتبات الأساسية - Core Libraries
+numpy>=1.21.0
+pygame>=2.1.0
+dataclasses>=0.6
+
+# معالجة البيانات - Data Processing
+json5>=0.9.0
+datetime
+
+# الذكاء الاصطناعي والتعلم الآلي - AI and Machine Learning
+# ملاحظة: تم استبدال PyTorch والمكتبات التقليدية بنظام باسل الثوري
+# Note: Traditional ML libraries replaced with Basil's revolutionary system
+
+# واجهات المستخدم - User Interfaces
+tkinter  # مدمج مع Python - Built-in with Python
+
+# أدوات التطوير - Development Tools
+typing>=3.7.0
+uuid
+time
+random
+math
+
+# اختبار النظام - System Testing
+unittest
+pytest>=6.0.0
+
+# التوثيق - Documentation
+markdown>=3.3.0
+
+# الأمان - Security
+hashlib
+secrets
+
+# ملفات النظام - System Files
+os
+sys
+pathlib
+
+# التوازي والأداء - Concurrency and Performance
+threading
+asyncio
+multiprocessing
+
+# الشبكات (اختياري) - Networking (Optional)
+requests>=2.25.0
+urllib3>=1.26.0
+
+# قواعد البيانات (اختياري) - Databases (Optional)
+sqlite3  # مدمج مع Python - Built-in with Python
+
+# ضغط الملفات - File Compression
+zipfile
+tarfile
+
+# معالجة الصور (اختياري) - Image Processing (Optional)
+# PIL>=8.0.0  # غير مطلوب حالياً - Not required currently
+
+# الصوت (اختياري) - Audio (Optional)
+# pygame.mixer مدمج مع pygame - pygame.mixer included with pygame
+
+# ملاحظات مهمة - Important Notes:
+# 1. هذا النظام لا يعتمد على PyTorch أو TensorFlow أو أي مكتبة تعلم آلي تقليدية
+# 2. يستخدم نظام باسل الثوري للمعادلات التكيفية بدلاً من الشبكات العصبية
+# 3. جميع المكتبات المطلوبة متوفرة في Python الأساسي أو سهلة التثبيت
+# 4. النظام محسن للأداء العالي والاستهلاك المنخفض للذاكرة
+
+# 1. This system does not depend on PyTorch, TensorFlow, or any traditional ML libraries
+# 2. Uses Basil's revolutionary adaptive equation system instead of neural networks  
+# 3. All required libraries are available in base Python or easy to install
+# 4. System optimized for high performance and low memory consumption
+
+# إرشادات التثبيت - Installation Instructions:
+# pip install -r requirements.txt
+
+# للتطوير - For Development:
+# pip install -r requirements.txt
+# pip install pytest coverage black flake8
+
+# اختبار التثبيت - Test Installation:
+# python -c "import numpy, pygame; print('✅ جميع المتطلبات مثبتة بنجاح')"

@@ -1,0 +1,45 @@
+# بيئات Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# بيئات افتراضية
+venv/
+ENV/
+.env
+
+# ملفات النماذج والبيانات الكبيرة
+*.h5
+*.pkl
+*.bin
+data/raw/
+data/processed/
+models/checkpoints/
+
+# ملفات النظام
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ملفات السجلات
+logs/
+*.log

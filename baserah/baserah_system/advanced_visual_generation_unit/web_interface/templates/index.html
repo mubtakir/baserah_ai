@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام بصيرة - التوليد البصري الثوري</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            padding: 30px;
+            max-width: 1400px;
+        }
+        
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 15px;
+            color: white;
+        }
+        
+        .control-panel {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 2px solid #e9ecef;
+        }
+        
+        .preview-area {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            min-height: 400px;
+            border: 2px dashed #dee2e6;
+            text-align: center;
+        }
+        
+        .shape-card {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .shape-card:hover {
+            border-color: #007bff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .shape-card.selected {
+            border-color: #28a745;
+            background: #f8fff9;
+        }
+        
+        .btn-generate {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-generate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
+        }
+        
+        .progress-container {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .result-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stats-widget {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .effect-tag {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 2px;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .gallery-item {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .quality-meter {
+            height: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+        
+        .quality-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #dc3545, #ffc107, #28a745);
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-container">
+            <!-- Header -->
+            <div class="header-section">
+                <h1><i class="fas fa-palette"></i> نظام بصيرة للتوليد البصري الثوري</h1>
+                <p class="lead">إبداع باسل يحيى عبدالله من العراق/الموصل</p>
+                <p>🖼️ توليد صور + 🎬 إنشاء فيديو + 🎨 رسم متقدم + 🔬 فيزياء + 🧠 خبير</p>
+            </div>
+
+            <div class="row">
+                <!-- Control Panel -->
+                <div class="col-lg-4">
+                    <div class="control-panel">
+                        <h3><i class="fas fa-cogs"></i> لوحة التحكم</h3>
+                        
+                        <!-- Shape Selection -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-shapes"></i> اختيار الشكل</h5>
+                            <div id="shapesContainer" class="row">
+                                <div class="col-12 text-center">
+                                    <div class="loading-spinner"></div>
+                                    <p>جاري تحميل الأشكال...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Output Types -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-file-image"></i> نوع المخرجات</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="image" id="outputImage" checked>
+                                <label class="form-check-label" for="outputImage">صورة ثابتة</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="artwork" id="outputArtwork">
+                                <label class="form-check-label" for="outputArtwork">عمل فني</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="video" id="outputVideo">
+                                <label class="form-check-label" for="outputVideo">فيديو متحرك</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="animation" id="outputAnimation">
+                                <label class="form-check-label" for="outputAnimation">رسم متحرك</label>
+                            </div>
+                        </div>
+
+                        <!-- Quality Level -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-star"></i> مستوى الجودة</h5>
+                            <select class="form-select" id="qualityLevel">
+                                <option value="standard">جودة عادية (1280x720)</option>
+                                <option value="high" selected>جودة عالية (1920x1080)</option>
+                                <option value="ultra">جودة فائقة (2560x1440)</option>
+                                <option value="masterpiece">تحفة فنية (3840x2160)</option>
+                            </select>
+                        </div>
+
+                        <!-- Artistic Style -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-brush"></i> النمط الفني</h5>
+                            <select class="form-select" id="artisticStyle">
+                                <option value="photorealistic">واقعي فوتوغرافي</option>
+                                <option value="digital_art" selected>فن رقمي</option>
+                                <option value="impressionist">انطباعي</option>
+                                <option value="watercolor">ألوان مائية</option>
+                                <option value="oil_painting">رسم زيتي</option>
+                                <option value="anime">أنمي</option>
+                                <option value="abstract">تجريدي</option>
+                            </select>
+                        </div>
+
+                        <!-- Advanced Options -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-sliders-h"></i> خيارات متقدمة</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="physicsSimulation" checked>
+                                <label class="form-check-label" for="physicsSimulation">محاكاة فيزيائية</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="expertAnalysis" checked>
+                                <label class="form-check-label" for="expertAnalysis">تحليل خبير</label>
+                            </div>
+                        </div>
+
+                        <!-- Visual Effects -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-magic"></i> التأثيرات البصرية</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="glow" id="effectGlow">
+                                        <label class="form-check-label" for="effectGlow">توهج</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="sharpen" id="effectSharpen">
+                                        <label class="form-check-label" for="effectSharpen">حدة</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="enhance" id="effectEnhance">
+                                        <label class="form-check-label" for="effectEnhance">تحسين</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="neon" id="effectNeon">
+                                        <label class="form-check-label" for="effectNeon">نيون</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Generate Button -->
+                        <div class="text-center">
+                            <button class="btn btn-generate" id="generateBtn" onclick="generateContent()">
+                                <i class="fas fa-rocket"></i> إنشاء المحتوى البصري
+                            </button>
+                        </div>
+
+                        <!-- Progress -->
+                        <div class="progress-container" id="progressContainer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                     role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <p class="text-center mt-2" id="progressText">جاري المعالجة...</p>
+                        </div>
+                    </div>
+
+                    <!-- Stats Widget -->
+                    <div class="stats-widget">
+                        <h5><i class="fas fa-chart-bar"></i> إحصائيات النظام</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <div><strong id="totalRequests">0</strong></div>
+                                <small>إجمالي الطلبات</small>
+                            </div>
+                            <div class="col-6">
+                                <div><strong id="successRate">0%</strong></div>
+                                <small>معدل النجاح</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview and Results -->
+                <div class="col-lg-8">
+                    <!-- Preview Area -->
+                    <div class="preview-area" id="previewArea">
+                        <i class="fas fa-image fa-5x text-muted mb-3"></i>
+                        <h4 class="text-muted">منطقة المعاينة</h4>
+                        <p class="text-muted">اختر شكلاً وانقر على "إنشاء المحتوى البصري" لبدء التوليد</p>
+                    </div>
+
+                    <!-- Results Container -->
+                    <div id="resultsContainer" class="mt-4"></div>
+
+                    <!-- Gallery -->
+                    <div class="mt-4">
+                        <h4><i class="fas fa-images"></i> معرض الأعمال المولدة</h4>
+                        <div id="galleryContainer" class="row">
+                            <div class="col-12 text-center">
+                                <p class="text-muted">لا توجد أعمال مولدة بعد</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        let selectedShapeId = null;
+        let currentRequestId = null;
+
+        // تحميل الأشكال عند بدء التشغيل
+        document.addEventListener('DOMContentLoaded', function() {
+            loadShapes();
+            loadStats();
+            loadGallery();
+            
+            // تحديث الإحصائيات كل 30 ثانية
+            setInterval(loadStats, 30000);
+        });
+
+        // تحميل الأشكال المتاحة
+        async function loadShapes() {
+            try {
+                const response = await fetch('/api/shapes');
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayShapes(data.shapes);
+                } else {
+                    console.error('خطأ في تحميل الأشكال:', data.error);
+                }
+            } catch (error) {
+                console.error('خطأ في الاتصال:', error);
+            }
+        }
+
+        // عرض الأشكال
+        function displayShapes(shapes) {
+            const container = document.getElementById('shapesContainer');
+            container.innerHTML = '';
+
+            shapes.forEach(shape => {
+                const shapeCard = document.createElement('div');
+                shapeCard.className = 'col-12 shape-card';
+                shapeCard.onclick = () => selectShape(shape.id, shapeCard);
+                
+                const colorStyle = `background-color: rgb(${shape.color.join(',')})`;
+                
+                shapeCard.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle me-3" style="${colorStyle}; width: 30px; height: 30px;"></div>
+                        <div>
+                            <strong>${shape.name}</strong>
+                            <br><small class="text-muted">${shape.category}</small>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(shapeCard);
+            });
+        }
+
+        // اختيار شكل
+        function selectShape(shapeId, cardElement) {
+            // إزالة التحديد السابق
+            document.querySelectorAll('.shape-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // تحديد الشكل الجديد
+            cardElement.classList.add('selected');
+            selectedShapeId = shapeId;
+        }
+
+        // توليد المحتوى
+        async function generateContent() {
+            if (!selectedShapeId) {
+                alert('يرجى اختيار شكل أولاً');
+                return;
+            }
+
+            // جمع البيانات من النموذج
+            const outputTypes = [];
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach(checkbox => {
+                if (['image', 'artwork', 'video', 'animation'].includes(checkbox.value)) {
+                    outputTypes.push(checkbox.value);
+                }
+            });
+
+            if (outputTypes.length === 0) {
+                alert('يرجى اختيار نوع مخرجات واحد على الأقل');
+                return;
+            }
+
+            const customEffects = [];
+            document.querySelectorAll('input[id^="effect"]:checked').forEach(checkbox => {
+                customEffects.push(checkbox.value);
+            });
+
+            const requestData = {
+                shape_id: selectedShapeId,
+                output_types: outputTypes,
+                quality_level: document.getElementById('qualityLevel').value,
+                artistic_styles: [document.getElementById('artisticStyle').value],
+                physics_simulation: document.getElementById('physicsSimulation').checked,
+                expert_analysis: document.getElementById('expertAnalysis').checked,
+                custom_effects: customEffects,
+                output_resolution: getResolutionFromQuality(document.getElementById('qualityLevel').value),
+                animation_duration: 5.0
+            };
+
+            // إرسال الطلب
+            try {
+                showProgress();
+                
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    currentRequestId = data.request_id;
+                    pollForResult(data.request_id);
+                } else {
+                    hideProgress();
+                    alert('خطأ: ' + data.error);
+                }
+            } catch (error) {
+                hideProgress();
+                alert('خطأ في الاتصال: ' + error.message);
+            }
+        }
+
+        // استطلاع النتيجة
+        async function pollForResult(requestId) {
+            try {
+                const response = await fetch(`/api/result/${requestId}`);
+                const data = await response.json();
+                
+                if (data.success && data.status === 'completed') {
+                    hideProgress();
+                    displayResult(data.result);
+                    loadGallery(); // تحديث المعرض
+                    loadStats(); // تحديث الإحصائيات
+                } else if (data.status === 'processing') {
+                    // الانتظار والمحاولة مرة أخرى
+                    setTimeout(() => pollForResult(requestId), 2000);
+                } else {
+                    hideProgress();
+                    alert('خطأ في الحصول على النتيجة');
+                }
+            } catch (error) {
+                hideProgress();
+                alert('خطأ في استطلاع النتيجة: ' + error.message);
+            }
+        }
+
+        // عرض التقدم
+        function showProgress() {
+            document.getElementById('generateBtn').disabled = true;
+            document.getElementById('progressContainer').style.display = 'block';
+            
+            let progress = 0;
+            const progressBar = document.querySelector('.progress-bar');
+            const progressText = document.getElementById('progressText');
+            
+            const interval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress > 90) progress = 90;
+                
+                progressBar.style.width = progress + '%';
+                progressText.textContent = `جاري المعالجة... ${Math.round(progress)}%`;
+            }, 500);
+            
+            // حفظ المؤقت لإيقافه لاحقاً
+            window.progressInterval = interval;
+        }
+
+        // إخفاء التقدم
+        function hideProgress() {
+            document.getElementById('generateBtn').disabled = false;
+            document.getElementById('progressContainer').style.display = 'none';
+            
+            if (window.progressInterval) {
+                clearInterval(window.progressInterval);
+            }
+        }
+
+        // عرض النتيجة
+        function displayResult(result) {
+            const container = document.getElementById('resultsContainer');
+            
+            const resultCard = document.createElement('div');
+            resultCard.className = 'result-card';
+            
+            let contentHtml = '';
+            for (const [type, path] of Object.entries(result.generated_content)) {
+                const quality = result.quality_metrics[type] || 0;
+                const artistic = result.artistic_scores[type] || 0;
+                
+                contentHtml += `
+                    <div class="mb-3">
+                        <h6><i class="fas fa-file"></i> ${getTypeLabel(type)}</h6>
+                        <p><strong>الملف:</strong> ${path}</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <small>جودة: ${(quality * 100).toFixed(1)}%</small>
+                                <div class="quality-meter">
+                                    <div class="quality-fill" style="width: ${quality * 100}%"></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <small>فني: ${(artistic * 100).toFixed(1)}%</small>
+                                <div class="quality-meter">
+                                    <div class="quality-fill" style="width: ${artistic * 100}%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/download/${path}" class="btn btn-sm btn-primary me-2">
+                            <i class="fas fa-download"></i> تحميل
+                        </a>
+                        <a href="/preview/${path}" target="_blank" class="btn btn-sm btn-secondary">
+                            <i class="fas fa-eye"></i> معاينة
+                        </a>
+                    </div>
+                `;
+            }
+            
+            resultCard.innerHTML = `
+                <h5><i class="fas fa-check-circle text-success"></i> تم إنشاء المحتوى بنجاح!</h5>
+                <p><strong>وقت المعالجة:</strong> ${result.processing_time.toFixed(2)} ثانية</p>
+                ${contentHtml}
+                ${result.recommendations.length > 0 ? `
+                    <div class="mt-3">
+                        <h6><i class="fas fa-lightbulb"></i> التوصيات:</h6>
+                        <ul>
+                            ${result.recommendations.map(rec => `<li>${rec}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+            `;
+            
+            container.appendChild(resultCard);
+        }
+
+        // تحميل الإحصائيات
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const data = await response.json();
+                
+                if (data.success) {
+                    document.getElementById('totalRequests').textContent = data.interface_stats.total_requests;
+                    document.getElementById('successRate').textContent = data.interface_stats.success_rate.toFixed(1) + '%';
+                }
+            } catch (error) {
+                console.error('خطأ في تحميل الإحصائيات:', error);
+            }
+        }
+
+        // تحميل المعرض
+        async function loadGallery() {
+            try {
+                const response = await fetch('/api/gallery');
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayGallery(data.gallery);
+                }
+            } catch (error) {
+                console.error('خطأ في تحميل المعرض:', error);
+            }
+        }
+
+        // عرض المعرض
+        function displayGallery(items) {
+            const container = document.getElementById('galleryContainer');
+            
+            if (items.length === 0) {
+                container.innerHTML = '<div class="col-12 text-center"><p class="text-muted">لا توجد أعمال مولدة بعد</p></div>';
+                return;
+            }
+            
+            container.innerHTML = '';
+            
+            items.slice(0, 6).forEach(item => {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'col-md-4 gallery-item';
+                
+                galleryItem.innerHTML = `
+                    <h6>${item.shape_name}</h6>
+                    <small class="text-muted">${new Date(item.creation_date).toLocaleString('ar')}</small>
+                    <div class="mt-2">
+                        ${Object.keys(item.generated_content).map(type => 
+                            `<span class="effect-tag">${getTypeLabel(type)}</span>`
+                        ).join('')}
+                    </div>
+                    <div class="mt-2">
+                        <small>وقت المعالجة: ${item.processing_time.toFixed(2)}ث</small>
+                    </div>
+                `;
+                
+                container.appendChild(galleryItem);
+            });
+        }
+
+        // دوال مساعدة
+        function getResolutionFromQuality(quality) {
+            const resolutions = {
+                'standard': [1280, 720],
+                'high': [1920, 1080],
+                'ultra': [2560, 1440],
+                'masterpiece': [3840, 2160]
+            };
+            return resolutions[quality] || [1920, 1080];
+        }
+
+        function getTypeLabel(type) {
+            const labels = {
+                'image': 'صورة',
+                'video': 'فيديو',
+                'artwork': 'عمل فني',
+                'animation': 'رسم متحرك'
+            };
+            return labels[type] || type;
+        }
+    </script>
+</body>
+</html>

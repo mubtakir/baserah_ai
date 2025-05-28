@@ -1,0 +1,217 @@
+{
+  "user_profiles": {
+    "test_user_001": {
+      "user_id": "test_user_001",
+      "creation_date": "2025-05-25T01:57:35.811586",
+      "total_interactions": 0,
+      "learning_preferences": {},
+      "basil_methodology_affinity": 0.8,
+      "physics_thinking_affinity": 0.7,
+      "learning_history": []
+    },
+    "basil_methodology_test": {
+      "user_id": "basil_methodology_test",
+      "creation_date": "2025-05-25T01:57:35.813044",
+      "total_interactions": 0,
+      "learning_preferences": {},
+      "basil_methodology_affinity": 0.8,
+      "physics_thinking_affinity": 0.7,
+      "learning_history": []
+    },
+    "physics_thinking_test": {
+      "user_id": "physics_thinking_test",
+      "creation_date": "2025-05-25T01:57:35.814684",
+      "total_interactions": 0,
+      "learning_preferences": {},
+      "basil_methodology_affinity": 0.8,
+      "physics_thinking_affinity": 0.7,
+      "learning_history": []
+    },
+    "integrated_test_1": {
+      "user_id": "integrated_test_1",
+      "creation_date": "2025-05-25T01:57:35.816316",
+      "total_interactions": 0,
+      "learning_preferences": {},
+      "basil_methodology_affinity": 0.8,
+      "physics_thinking_affinity": 0.7,
+      "learning_history": []
+    },
+    "integrated_test_2": {
+      "user_id": "integrated_test_2",
+      "creation_date": "2025-05-25T01:57:35.817217",
+      "total_interactions": 0,
+      "learning_preferences": {},
+      "basil_methodology_affinity": 0.8,
+      "physics_thinking_affinity": 0.7,
+      "learning_history": []
+    },
+    "integrated_test_3": {
+      "user_id": "integrated_test_3",
+      "creation_date": "2025-05-25T01:57:35.819255",
+      "total_interactions": 0,
+      "learning_preferences": {},
+      "basil_methodology_affinity": 0.8,
+      "physics_thinking_affinity": 0.7,
+      "learning_history": []
+    }
+  },
+  "learning_experiences": [
+    {
+      "timestamp": "2025-05-25T01:57:35.812042",
+      "user_id": "test_user_001",
+      "query": "كيف يمكنني تعلم الرياضيات بطريقة أفضل؟",
+      "domain": "educational",
+      "strategy_used": "basil_integrative",
+      "confidence": 0.950362359750624,
+      "adaptation_quality": 0.91
+    },
+    {
+      "timestamp": "2025-05-25T01:57:35.813224",
+      "user_id": "basil_methodology_test",
+      "query": "أريد فهم العلاقة بين الفيزياء والرياضيات والفلسفة",
+      "domain": "philosophical",
+      "strategy_used": "adaptive_evolution",
+      "confidence": 0.9508055522488088,
+      "adaptation_quality": 0.91
+    },
+    {
+      "timestamp": "2025-05-25T01:57:35.814936",
+      "user_id": "physics_thinking_test",
+      "query": "كيف تعمل نظرية الفتائل في تفسير التفاعلات الكونية؟",
+      "domain": "scientific",
+      "strategy_used": "physics_filament",
+      "confidence": 0.9331256454019301,
+      "adaptation_quality": 0.91
+    },
+    {
+      "timestamp": "2025-05-25T01:57:35.816554",
+      "user_id": "integrated_test_1",
+      "query": "اشرح لي العلاقة بين نظرية الفتائل ومفهوم الرنين الكوني",
+      "domain": "scientific",
+      "strategy_used": "basil_integrative",
+      "confidence": 0.9529185614833001,
+      "adaptation_quality": 0.91
+    },
+    {
+      "timestamp": "2025-05-25T01:57:35.817543",
+      "user_id": "integrated_test_2",
+      "query": "كيف يمكنني تطوير مهاراتي في حل المشاكل المعقدة؟",
+      "domain": "educational",
+      "strategy_used": "adaptive_evolution",
+      "confidence": 0.9504868481083131,
+      "adaptation_quality": 0.91
+    },
+    {
+      "timestamp": "2025-05-25T01:57:35.819798",
+      "user_id": "integrated_test_3",
+      "query": "ما هي طبيعة المعرفة والحقيقة في الفكر الإنساني؟",
+      "domain": "philosophical",
+      "strategy_used": "basil_integrative",
+      "confidence": 0.9521056077955942,
+      "adaptation_quality": 0.91
+    }
+  ],
+  "adaptive_patterns": {},
+  "basil_insights_database": {
+    "ربط المفاهيم المختلفة في إطار موحد": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تكامل المعرفة من مصادر متنوعة": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "توحيد الرؤى المتباينة في فهم شامل": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "اكتشاف المعاني من خلال الحوار التفاعلي": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تطوير الفهم عبر التبادل الفكري": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "استخراج الحكمة من التفاعل المعرفي": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "العودة للمبادئ الأساسية والجذور": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تحليل الأسس الجوهرية للمعرفة": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "استخراج القوانين الأصولية العامة": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تطبيق التفكير التكاملي في التعلم الذكي": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "استخدام الاكتشاف الحواري لتحسين الأداء": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تطبيق التحليل الأصولي للمعرفة": {
+      "count": 6,
+      "effectiveness": 0.0
+    }
+  },
+  "physics_principles_database": {
+    "ربط المفاهيم كفتائل متفاعلة": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تفسير التماسك المعرفي بالتفاعل الفتائلي": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "توليد المعرفة بناءً على ديناميكا الفتائل": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "فهم التعلم كنظام رنيني متناغم": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "توليد معرفة متناغمة رنينياً": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تحليل التردد المعرفي للمفاهيم": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "قياس جهد المعرفة في التعلم": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "توليد تعلم بجهد معرفي متوازن": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "تحليل انتقال المعرفة بين المفاهيم": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "نظرية الفتائل في ربط المعرفة": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "مفهوم الرنين الكوني في التعلم": {
+      "count": 6,
+      "effectiveness": 0.0
+    },
+    "مبدأ الجهد المادي في انتقال المعرفة": {
+      "count": 6,
+      "effectiveness": 0.0
+    }
+  },
+  "expert_knowledge_base": {},
+  "exploration_discoveries": {}
+}

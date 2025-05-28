@@ -1,0 +1,36 @@
+{
+  "integration_cycles": 3,
+  "successful_cycles": 1,
+  "improvement_history": [
+    0.6292040490602632,
+    0.6292040490602632,
+    0.7512893955966494
+  ],
+  "last_updated": "2025-05-23T23:34:22.405850",
+  "system_report": {
+    "integration_summary": {
+      "total_cycles": 3,
+      "successful_cycles": 1,
+      "success_rate": 0.3333333333333333,
+      "average_improvement": 0.6698991645723918
+    },
+    "expert_system_status": {
+      "learning_cycles": 3,
+      "categories_learned": 2,
+      "total_improvements": 10,
+      "accuracy_threshold": 0.85,
+      "expert_confidence": "منخفض"
+    },
+    "performance_trend": {
+      "trend": "مستقر",
+      "trend_value": 0.0,
+      "recent_average": 0.6698991645723918,
+      "early_average": 0.6698991645723918
+    },
+    "recommendations": [
+      "الأداء يحتاج تحسين كبير",
+      "مراجعة خوارزميات الرسم والاستنباط"
+    ],
+    "system_health": "يحتاج تحسين"
+  }
+}

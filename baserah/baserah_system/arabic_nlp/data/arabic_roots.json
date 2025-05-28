@@ -1,0 +1,222 @@
+{
+  "علم": {
+    "derivatives": ["عالم", "علماء", "معلوم", "تعليم", "معلم", "علوم", "عليم", "علامة", "استعلام", "تعلم"],
+    "meaning": "knowledge, science, flag",
+    "pattern": "فعل"
+  },
+  "كتب": {
+    "derivatives": ["كاتب", "كتاب", "مكتوب", "مكتبة", "كتابة", "كتّاب", "استكتاب", "كتيب"],
+    "meaning": "to write, book",
+    "pattern": "فعل"
+  },
+  "قرأ": {
+    "derivatives": ["قارئ", "قراءة", "مقروء", "قرآن", "استقراء", "قراء"],
+    "meaning": "to read",
+    "pattern": "فعل"
+  },
+  "فهم": {
+    "derivatives": ["فاهم", "مفهوم", "تفهيم", "استفهام", "تفاهم", "فهيم"],
+    "meaning": "to understand",
+    "pattern": "فعل"
+  },
+  "درس": {
+    "derivatives": ["دارس", "مدروس", "دراسة", "مدرسة", "تدريس", "مدرس"],
+    "meaning": "to study, lesson",
+    "pattern": "فعل"
+  },
+  "بحث": {
+    "derivatives": ["باحث", "مبحوث", "أبحاث", "استبحاث", "مبحث"],
+    "meaning": "to research, search",
+    "pattern": "فعل"
+  },
+  "فكر": {
+    "derivatives": ["مفكر", "فكرة", "تفكير", "أفكار", "مفكرة", "فكري"],
+    "meaning": "to think, thought",
+    "pattern": "فعل"
+  },
+  "نظر": {
+    "derivatives": ["ناظر", "منظور", "نظرية", "منظر", "نظارة", "تناظر", "نظير"],
+    "meaning": "to look, theory, view",
+    "pattern": "فعل"
+  },
+  "حسب": {
+    "derivatives": ["حاسب", "محسوب", "حساب", "محاسبة", "حسابي", "احتساب"],
+    "meaning": "to calculate, count",
+    "pattern": "فعل"
+  },
+  "حلل": {
+    "derivatives": ["محلل", "تحليل", "حلول", "تحلل", "محلول"],
+    "meaning": "to analyze, solution",
+    "pattern": "فعل"
+  },
+  "جمع": {
+    "derivatives": ["جامع", "مجموع", "جماعة", "اجتماع", "مجمع", "تجميع", "جمعية"],
+    "meaning": "to gather, collect",
+    "pattern": "فعل"
+  },
+  "قسم": {
+    "derivatives": ["قاسم", "مقسوم", "قسمة", "تقسيم", "قسم", "انقسام"],
+    "meaning": "to divide, section",
+    "pattern": "فعل"
+  },
+  "ضرب": {
+    "derivatives": ["ضارب", "مضروب", "ضرب", "تضارب", "مضرب"],
+    "meaning": "to hit, multiply",
+    "pattern": "فعل"
+  },
+  "طرح": {
+    "derivatives": ["طارح", "مطروح", "طرح", "مطرح", "اطراح"],
+    "meaning": "to subtract, pose",
+    "pattern": "فعل"
+  },
+  "قدم": {
+    "derivatives": ["قادم", "مقدم", "قديم", "تقديم", "مقدمة", "استقدام", "قدوم"],
+    "meaning": "to present, old, front",
+    "pattern": "فعل"
+  },
+  "أخر": {
+    "derivatives": ["آخر", "متأخر", "تأخير", "أخير", "مؤخرة", "تأخر"],
+    "meaning": "to delay, last, other",
+    "pattern": "فعل"
+  },
+  "بدأ": {
+    "derivatives": ["بادئ", "مبدوء", "بداية", "مبدأ", "ابتداء", "بدء"],
+    "meaning": "to begin, start",
+    "pattern": "فعل"
+  },
+  "نهى": {
+    "derivatives": ["ناهي", "منهي", "نهاية", "انتهاء", "منتهى", "تناهي"],
+    "meaning": "to end, forbid",
+    "pattern": "فعل"
+  },
+  "وصل": {
+    "derivatives": ["واصل", "موصول", "وصلة", "اتصال", "توصيل", "وصول"],
+    "meaning": "to connect, arrive",
+    "pattern": "فعل"
+  },
+  "فصل": {
+    "derivatives": ["فاصل", "مفصول", "فصل", "انفصال", "تفصيل", "مفصل"],
+    "meaning": "to separate, chapter",
+    "pattern": "فعل"
+  },
+  "سأل": {
+    "derivatives": ["سائل", "مسؤول", "سؤال", "تساؤل", "مسألة", "مسائل"],
+    "meaning": "to ask, question",
+    "pattern": "فعل"
+  },
+  "جوب": {
+    "derivatives": ["جواب", "مجيب", "إجابة", "استجابة", "تجاوب", "مجاوبة"],
+    "meaning": "to answer, response",
+    "pattern": "فعل"
+  },
+  "شرح": {
+    "derivatives": ["شارح", "مشروح", "شرح", "تشريح", "مشرحة"],
+    "meaning": "to explain, explanation",
+    "pattern": "فعل"
+  },
+  "وضح": {
+    "derivatives": ["واضح", "موضح", "إيضاح", "توضيح", "وضوح", "استيضاح"],
+    "meaning": "to clarify, clear",
+    "pattern": "فعل"
+  },
+  "عمل": {
+    "derivatives": ["عامل", "معمول", "عمل", "معاملة", "استعمال", "عمالة"],
+    "meaning": "to work, action",
+    "pattern": "فعل"
+  },
+  "صنع": {
+    "derivatives": ["صانع", "مصنوع", "صناعة", "مصنع", "اصطناع", "تصنيع"],
+    "meaning": "to make, manufacture",
+    "pattern": "فعل"
+  },
+  "بنى": {
+    "derivatives": ["باني", "مبني", "بناء", "بنية", "مبنى", "بناية"],
+    "meaning": "to build, structure",
+    "pattern": "فعل"
+  },
+  "هدم": {
+    "derivatives": ["هادم", "مهدوم", "هدم", "تهديم", "انهدام", "هدام"],
+    "meaning": "to demolish, destruction",
+    "pattern": "فعل"
+  },
+  "فتح": {
+    "derivatives": ["فاتح", "مفتوح", "فتح", "مفتاح", "افتتاح", "استفتاح"],
+    "meaning": "to open, opening",
+    "pattern": "فعل"
+  },
+  "غلق": {
+    "derivatives": ["غالق", "مغلق", "غلق", "إغلاق", "انغلاق", "استغلاق"],
+    "meaning": "to close, closure",
+    "pattern": "فعل"
+  },
+  "دخل": {
+    "derivatives": ["داخل", "مدخول", "دخول", "مدخل", "تداخل", "إدخال"],
+    "meaning": "to enter, income",
+    "pattern": "فعل"
+  },
+  "خرج": {
+    "derivatives": ["خارج", "مخرج", "خروج", "استخراج", "تخريج", "مخرجات"],
+    "meaning": "to exit, output",
+    "pattern": "فعل"
+  },
+  "صعد": {
+    "derivatives": ["صاعد", "مصعود", "صعود", "مصعد", "تصعيد", "تصاعد"],
+    "meaning": "to ascend, rise",
+    "pattern": "فعل"
+  },
+  "نزل": {
+    "derivatives": ["نازل", "منزول", "نزول", "منزل", "تنزيل", "إنزال"],
+    "meaning": "to descend, house",
+    "pattern": "فعل"
+  },
+  "كبر": {
+    "derivatives": ["كبير", "أكبر", "كبار", "تكبير", "استكبار", "مكبر"],
+    "meaning": "to grow, big",
+    "pattern": "فعل"
+  },
+  "صغر": {
+    "derivatives": ["صغير", "أصغر", "صغار", "تصغير", "استصغار", "مصغر"],
+    "meaning": "to shrink, small",
+    "pattern": "فعل"
+  },
+  "طول": {
+    "derivatives": ["طويل", "أطول", "طوال", "تطويل", "استطالة", "متطاول"],
+    "meaning": "to lengthen, long",
+    "pattern": "فعل"
+  },
+  "قصر": {
+    "derivatives": ["قصير", "أقصر", "قصار", "تقصير", "قاصر", "مقصور"],
+    "meaning": "to shorten, short, palace",
+    "pattern": "فعل"
+  },
+  "وسع": {
+    "derivatives": ["واسع", "أوسع", "وساع", "توسيع", "اتساع", "موسع"],
+    "meaning": "to widen, wide",
+    "pattern": "فعل"
+  },
+  "ضيق": {
+    "derivatives": ["ضيق", "أضيق", "تضييق", "مضيق", "انضياق", "متضايق"],
+    "meaning": "to narrow, tight",
+    "pattern": "فعل"
+  },
+  "ثقل": {
+    "derivatives": ["ثقيل", "أثقل", "ثقال", "تثقيل", "متثاقل", "مثقال"],
+    "meaning": "to weigh, heavy",
+    "pattern": "فعل"
+  },
+  "خفف": {
+    "derivatives": ["خفيف", "أخف", "خفاف", "تخفيف", "مخفف", "استخفاف"],
+    "meaning": "to lighten, light",
+    "pattern": "فعل"
+  },
+  "سرع": {
+    "derivatives": ["سريع", "أسرع", "سراع", "تسريع", "مسرع", "إسراع"],
+    "meaning": "to speed, fast",
+    "pattern": "فعل"
+  },
+  "بطء": {
+    "derivatives": ["بطيء", "أبطأ", "إبطاء", "تباطؤ", "متباطئ", "استبطاء"],
+    "meaning": "to slow, slow",
+    "pattern": "فعل"
+  }
+}
